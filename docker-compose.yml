@@ -1,0 +1,29 @@
+# Some helpful notes:
+# 1.  To install docker on windows and mac: https://www.docker.com/products/docker-desktop
+#     To install docker on linux: https://docs.docker.com/engine/install/ubuntu/
+#     Make sure docker-compose is also installed
+# 2.  Make sure that you place your code only in the src directory
+# 3.  Do not try and modify/add/remove anything in the input directory in your code
+# 4.  Do not change the folder name of the original dataset within the input directory.
+#     We will use the standard names, so custom names will not work when we run it.
+# 5.  To run your code open a command line at the root of the project template folder
+#     and run "docker-compose up". You can add the "-d" flag at the end if you wish to
+#     detach from the command line (this is only useful when debugging)
+
+version: '3.7'
+services:
+  project:
+    image: rob501/project:latest
+    command: "python3 ./src/rob501_project.py --input_dir=./input --output_dir=./output"
+
+    # If you want to debug, uncomment these lines and 
+    # comment out the other command line, then
+    # remote into your container using visual studio 
+    # code with the extension "Remote - Containers"
+    ## command: "/bin/bash"
+    ## stdin_open: true
+  
+    volumes:
+      - "./src:/usr/src/app/src"
+      - "./input:/usr/src/app/input:ro"
+      - "./output:/usr/src/app/output"
