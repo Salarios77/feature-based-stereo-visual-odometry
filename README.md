@@ -29,11 +29,11 @@ This repo uses the Canadian Planetary Emulation Terrain Energy-Aware Rover Navig
     ```
 ### Run Visual Odometry
 The default settings run the visual odometry on the first ~80 seconds of Run #1. All outputs will be automatically saved to the output folder.
-1a. To run inside a docker container, run the following command in the main directory of the repo:
+\To run inside a docker container, run the following command in the main directory of the repo:
     ```
     docker-compose up
     ```
-1b. Instead, to run manually, run the following command in the main directory of the repo:
+\Instead, to run manually, run the following command in the main directory of the repo:
     ```
     python3 ./src/rob501_project.py --input_dir=./input --output_dir=./output
     ```
