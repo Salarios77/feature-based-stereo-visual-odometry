@@ -4,10 +4,7 @@ scipy==1.5.4
 opencv-python==4.4.0.46
 open3d==0.11.2
 PyOpenGL==3.1.5
-torch==1.7.0+cpu
 imutils==0.5.3
-tensorflow==2.3.1
-Keras==2.4.3
 celluloid==0.2.0
 filterpy==1.4.5
 scikit-image==0.17.2
