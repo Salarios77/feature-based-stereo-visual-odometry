@@ -1,6 +1,8 @@
 # Feature-Based Stereo Visual Odometry using Harris, SIFT, and BRISK Feature Detectors
 This repo contains a stereo VO implementation from scratch using OpenCV implementations of Harris, SIFT, and BRISK.
 
+A report of the results from the experimentation using the 3 feature detectors can be viewed in 'Feature-Based Visual Odometry Investigation.pdf'.
+
 ## Getting Started
 ### Environment
 1. Python>=3.6  
